@@ -15,7 +15,17 @@ const TrendingCard = ({ className, post }: TrendingCardProps) => {
       href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}
     >
       <div className="z-0 relative w-full h-full">
-        Image
+        <Image
+          fill
+          alt="tech"
+          placeholder="blur"
+          src={post?.image}
+          sizes="(max-width: 480px) 100vw,
+                (max-width: 768px) 75vw,
+                (max-width: 1060px) 50vw,
+                33vw"
+          style={{ objectFit: "cover" }}
+        />
       </div>
       <div className="absolute z-1 top-0 left-0 w-full h-full bg-gradient-gradual" />
       <div className="absolute z-2 bottom-0 left-0 p-3">
@@ -64,9 +74,7 @@ const Trending = ({ trendingPosts }: Props) => {
       </div>
 
       <p className="text-sm">
-        Id cursus purus adipiscing ipsum pretium. Scelerisque suspendisse
-        pharetra ultrices mauris ut lacus sagittis pharetra dictum. Congue
-        viverra in aliquam feugiat pellentesque.
+        Here are the trending posts on Write Wizard. Continue browsing for more!
       </p>
     </section>
   );
