@@ -90,9 +90,10 @@ const Content = ({ post }: Props) => {
 
   return (
     <div className="prose w-full max-w-full mb-10">
+      {/* BREADCRUMBS */}
       <h5 className="text-wh-300">{`Home > ${post.category} > ${post.title}`}</h5>
 
-      {/* Category and Edit */}
+      {/* CATEGORY AND EDIT */}
       <CategoryAndEdit
         isEditable={isEditable}
         handleIsEditable={handleIsEditable}
@@ -107,7 +108,7 @@ const Content = ({ post }: Props) => {
       />
 
       <form onSubmit={handleSubmit}>
-        {/* Header */}
+        {/* HEADER */}
         <>
           {isEditable ? (
             <div>
@@ -130,7 +131,7 @@ const Content = ({ post }: Props) => {
           </div>
         </>
 
-        {/* Image */}
+        {/* IMAGE */}
         <div className="relative w-auto mt-2 mb-16 h-96">
           <Image
             fill
@@ -144,7 +145,7 @@ const Content = ({ post }: Props) => {
           />
         </div>
 
-        {/* Article */}
+        {/* ARTICLE */}
         <Article
           contentError={contentError}
           editor={editor}
@@ -153,7 +154,7 @@ const Content = ({ post }: Props) => {
           title={title}
         />
 
-        {/* Submit Button */}
+        {/* SUBMIT BUTTON */}
         {isEditable && (
           <div className="flex justify-end">
             <button
