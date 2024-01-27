@@ -18,11 +18,12 @@
     "@tiptap/pm": "^2.1.16",
     "@tiptap/react": "^2.1.16",
     "@tiptap/starter-kit": "^2.1.16",
+    "@types/axios": "^0.14.0",
     "next": "14.1.0",
+    "openai": "^4.26.0",
     "react": "^18",
     "react-dom": "^18"
   },
-
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20.11.6",
