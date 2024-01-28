@@ -18,7 +18,7 @@ This AI Blog App is an innovative platform that leverages the power of AI to rev
 - Responsive Design: Provides a responsive and fast user experience
 
 ## Demo
-Experience the AI Blog App: blog-ai-gamma.vercel.app
+Experience the AI Blog App: [blog-ai-gamma.vercel.app](https://blog-ai-gamma.vercel.app)
 
 Note: Blog posts will only be rendered when the Prisma MySQL database is connected.
 
